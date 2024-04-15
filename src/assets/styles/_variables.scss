@@ -1,0 +1,35 @@
+/** COLORS **/
+
+// Primary colors
+
+$primary-color-blue: #a3adff;
+$primary-color-black: #333333;
+$primary-color-gray: #f8f8f8;
+
+
+$secondary-color-red: #ff4343;
+$secondary-color-purple: #8119b1;
+$secondary-color-blue: #c3caf9;
+$secondary-color-blue-light: #a3adff;
+$secondary-color-grey: #8d8d8d;
+$secondary-color-grey-light: #a0a0a0;
+$secondary-color-grey-card: #eceff1;
+$secondary-color-orange: #ffaf12;
+$secondary-color-white: #fff;
+$secondary-color-purple-light: #c2adfa;
+$secondary-color-lavand-light: #aeacfd;
+
+// Gradient colors
+$main-background: #a2acff;
+$main-gradient: linear-gradient(to bottom right, #a2acff 0%, #caadf9 100%);
+
+/** TYPOGRAPHY **/
+
+// Break points
+$desktopFull: 1712px;
+$desktop: 1024px;
+$tablet: 768px;
+$mobile: 320px;
+
+// Screen width
+$maxWidthScreen: 1712px;

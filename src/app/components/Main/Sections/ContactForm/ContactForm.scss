@@ -1,0 +1,140 @@
+@import "../../../../../assets/styles/style";
+
+.contact-form-footer {
+  .container {
+    background-color: $secondary-color-lavand-light;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    @media (min-width: $desktop) {
+      justify-content: space-around;
+    }
+
+    .contact-form-footer-info,
+    .contact-form {
+      width: 100%;
+      margin-bottom: 20px;
+
+      @media (min-width: $tablet) {
+        width: calc(50% - 10px);
+        margin-top: 30px;
+        margin-bottom: 0;
+
+        &:first-child {
+          margin-right: 10px;
+        }
+      }
+      @media (min-width: $desktop) {
+        width: calc(33.33% - 10px);
+        margin-bottom: 20px;
+      }
+    }
+
+    .contact-form-footer-info{
+      @media (min-width: $desktop) {
+       margin-left: 400px;
+      }
+    }
+
+    .contact-form-footer-info {
+      .contact-form-footer-title {
+        font: 600 20px / 1.5 "Inter", sans-serif;
+        text-align: center;
+        color: $secondary-color-white;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        @media (min-width: $tablet) {
+          font: 600 20px / 1.5 "Inter", sans-serif;
+        }
+        @media (min-width: $desktop) {
+          font: 400 20px / 1.5 "Inter", sans-serif;
+          text-align: left;
+          color: #fff;
+        }
+
+      }
+
+      .contact-form-footer-text {
+        font: 400 14px / 1.5 "Inter", sans-serif;
+        color: $secondary-color-white;
+        opacity: 0.9;
+        margin-bottom: 20px;
+      }
+    }
+
+    .contact-form {
+      .contact-form-input {
+        margin-bottom: 20px;
+
+        @media (min-width: $tablet) {
+          margin-bottom: 10px;
+        }
+
+        .contact-form-label {
+          display: block;
+          font: 400 15px / 1.5 "Inter", sans-serif;
+          color: $secondary-color-white;
+          margin-bottom: 5px;
+        }
+
+        .input_ui__input {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 16px;
+
+          &:disabled {
+            background-color: $secondary-color-white;
+          }
+        }
+
+        .error-message {
+          color: red;
+          font-size: 14px;
+          margin-top: 5px;
+        }
+      }
+
+      .contact-form-btn {
+        width: 100%;
+        padding: 12px 80px;
+        margin-top: 16px;
+        background-color: $secondary-color-purple;
+        border-radius: 5px;
+        margin-bottom: 16px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: darken($secondary-color-purple, 10%);
+        }
+      }
+
+      .btn-text {
+        font: 400 16px / 1.5 "Inter", sans-serif;
+        color: $secondary-color-white;
+        flex-direction: row;
+      }
+    }
+
+    .contact-form-footer-svg {
+      display: none;
+
+      @media (min-width: $tablet) {
+        justify-content: left;
+        display: block;
+        left: 0;
+        top: -30px;
+        width: 45%;
+        fill: rgba(255, 255, 255, 0.2);
+        position: absolute;
+      }
+      @media (min-width: $desktop) {
+        left: -100px;
+       top: -30;
+        width: 45%;
+      }
+    }
+  }
+}
